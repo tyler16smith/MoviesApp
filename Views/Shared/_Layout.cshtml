@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body style="margin: 50px">
+    <div class="JoelNav">
+        <a asp-action="Index">JOEL HILTON</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a asp-action="Index">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a asp-action="MyPodcasts">Podcasts</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a asp-action="NewMovies">New Movie</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a asp-action="MovieList">Movie List</a>
+    </div><br />
+
+    <div class="margin">
+        <h1 class="JoelHeader">@ViewBag.Header</h1>
+
+        @RenderBody()
+        <br /><br /><br /><br /><hr />
+    </div>
+
+    <footer>
+        <center>
+            <p>
+                The Joel Hilton Film Collection 2021<br />
+                All Rights Reserved<br />
+                <a href="https://baconsale.com/">www.baconsale.com</a>
+            </p>
+        </center>
+    </footer>
+</body>
+</html>
